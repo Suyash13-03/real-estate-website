@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Property</title>
+    <link rel="stylesheet" href="/CSS/updateproperty.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Update Property</h2>
+        <form id="updateForm" action="/home/updateproperty" method="post">
+            <label for="property_id">Property ID:</label>
+            <input type="text" id="property_id" name="property_id" required>
+            
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+            
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price">
+            
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status">
+            
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description">
+            
+            <label for="amenities">Amenities:</label>
+            <input type="text" id="amenities" name="amenities">
+            
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type">
+            
+            <label for="deposit">Deposit:</label>
+            <input type="text" id="deposit" name="deposit">
+            
+            <button type="submit">Update Property</button>
+        </form>
+    </div>
+</body>
+</html>

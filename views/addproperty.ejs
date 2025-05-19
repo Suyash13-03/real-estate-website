@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property Details</title>
+    <link rel="stylesheet" href="/CSS/addproperty.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Property Details</h2>
+        <form action="/home/addproperty" method="post">
+            
+            <label for="title">Property Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter property title" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location" required>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" placeholder="Enter price" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Enter property description" required></textarea>
+
+            <label for="amenities">Amenities:</label>
+            <input type="text" id="amenities" name="amenities" placeholder="E.g., Parking, Gym, Security" required>
+
+            <label for="type">Property Type:</label>
+            <select id="type" name="type" required onchange="toggleDepositField()">
+                <option value="buy">Buy</option>
+                <option value="rent">Rent</option>
+            </select>
+
+            <div id="depositField" style="display: none;">
+                <label for="deposit">Deposit (For Rent Only):</label>
+                <input type="text" id="deposit" name="deposit" placeholder="Enter deposit amount">
+            </div>
+
+            <button type="submit">Add Property</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleDepositField() {
+            var type = document.getElementById("type").value;
+            var depositField = document.getElementById("depositField");
+
+            if (type === "rent") {
+                depositField.style.display = "block";
+            } else {
+                depositField.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

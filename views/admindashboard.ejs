@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/CSS/admindashboard.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Admin Dashboard</h1>
+        <a href="http://localhost:8080/apnaghar/home" class="logout-btn">Logout</a>
+    </nav>
+
+    <div class="dashboard-container">
+        <a href="http://localhost:8080/home/addproperty" class="dashboard-item add">Add Property</a>
+        <a href="http://localhost:8080/home/updateproperty" class="dashboard-item update">Update Property</a>
+        <a href="http://localhost:8080/home/deleteproperty" class="dashboard-item delete">Delete Property</a>
+    </div>
+    <%-include("partials/footer.ejs")%>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <div class="main-part">
+        <%-include("partials/header.ejs")%>
+        <div class="content">
+            <section class="contact-container">
+                <h2>Contact Us</h2>
+                <p>We’d love to hear from you! Feel free to reach out.</p>
+    
+                <div class="contact-info">
+                    <p><strong>📍 Address:</strong> Mumbai, India</p>
+                    <p><strong>📞 Phone:</strong> +91 86008 00475</p>
+                    <p><strong>📧 Email:</strong> support@apnaghar.com</p>
+                    <p><strong>🕒 Working Hours:</strong> Mon-Sat, 9 AM - 7 PM</p>
+                </div>
+    
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <details>
+                        <summary>📌 How can I book an appointment?</summary>
+                        <p>Go to the view details page and click on "Book Appointment."</p>
+                    </details>
+                    <details>
+                        <summary>📌 Is there any service fee?</summary>
+                        <p>No, our platform is free for buyers and renters.</p>
+                    </details>
+                    <details>
+                        <summary>📌 How do I contact customer support?</summary>
+                        <p>You can call us at +91 86008 00475 or email us at support@apnaghar.com.</p>
+                    </details>
+                </div>
+            </section>
+            <%-include("partials/footer.ejs")%>
+        </div>
+    </div>    
+</body>
+</html>

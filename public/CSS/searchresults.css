@@ -1,0 +1,131 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: white;
+    font-family:"Montserrat", serif;
+    overflow:hidden;
+}
+
+.main-part{
+    display:flex;
+    height:100vh;
+    flex-direction:column;
+}
+
+.content{
+    flex:1;
+    overflow:auto;
+}
+
+.cards-container{
+    display:flex;
+    padding:2rem;
+    flex-wrap:wrap;
+    column-gap:4rem;
+    row-gap:1.5rem;
+}
+
+img{
+    height:60%;
+    width:100%;
+    border-radius:0.5rem;
+}
+
+.card{
+    width:25%;
+    height:50%;
+    background-color:bisque;
+    text-align:center;
+    border-radius:1rem;
+    padding:0.5rem;
+    border:1px solid black;
+}
+
+.card h5{
+    font-size:1rem;
+    line-height:0.5rem;
+}
+
+.card p{
+    font-weight:500;
+    line-height:0.5rem;
+}
+
+.card button{
+    font-size:1.4rem;
+    border-radius:0.8rem;
+    background-color:green;
+    border:none;
+}
+
+.card button a{
+    font-size:1rem;
+    padding:0.5rem;
+    color:white;
+}
+
+.card button:hover{
+    box-shadow: 0 0 1.5rem purple;
+    font-size:1.5rem;
+}
+
+.card:hover{
+    box-shadow: 0 0 1.5rem black;
+}
+
+.content h2{
+    text-align:center;
+    margin-bottom:0;
+}
+
+/* Tablets and below */
+@media (max-width: 1024px) {
+    .card {
+        width: 40%;
+    }
+
+    .cards-container {
+        padding: 1rem;
+        column-gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content .searchbar {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 95%;
+    }
+
+    .card h5 {
+        font-size: 0.95rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .card button {
+        font-size: 1rem;
+    }
+
+}

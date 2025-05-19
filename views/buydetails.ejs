@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/buydetails.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <title>Property Details</title>
+</head>
+<body>
+    <div class="main-part">
+        <%-include("partials/header.ejs")%>
+        <div class="content">
+         <div class="content-wrapper">
+            <div class="box">
+                <div class="images">
+                    <%property.forEach(prop=>{%>
+                        <img src="<%=prop.image%>" alt="image">
+                   <% }); %>
+                </div>
+                <div class="details">
+                    <p>Type:<b><%=property[0].title%></b></p>
+                    <p>Location:<b><%=property[0].location%></b></p>
+                    <p>Price:<b><%=property[0].price%></b></p>
+                    <p>Description:<b><%=property[0].description%></b></p>
+                    <p>Status:<b><%=property[0].status%></b></p>
+                    <p>Amenities:<b><%=property[0].amenities%>.</b></p>
+                    <button><a href="/home/book/<%=property[0].id%>">Book Appointment</a></button>
+                </div>
+            </div>
+            <div class="button-box">
+                <p>"Homes like this don’t stay available for long. Book your appointment now!"</p>
+                <button><a href="/home/book/<%=property[0].id%>">Book Appointment</a></button>
+            </div>
+          </div>
+          <%-include("partials/footer.ejs")%>
+        </div>
+    </div>
+</body>
+</html>

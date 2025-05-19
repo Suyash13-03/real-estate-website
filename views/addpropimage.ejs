@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Image Details</title>
+    <link rel="stylesheet" href="/CSS/addpropimage.css">
+</head>
+<body>
+    <form action="/home/addpropimage" method="post">
+        <label>Property ID:</label>
+        <input type="text" name="property_id" placeholder="Enter Property ID" required>
+    
+        <label>Living Room:</label>
+        <input type="text" name="living_room" placeholder="Enter image path" required>
+    
+        <label>Bedroom 1:</label>
+        <input type="text" name="bedroom_1" placeholder="Enter image path" required>
+    
+        <label>Bedroom 2 (Optional):</label>
+        <input type="text" name="bedroom_2" placeholder="Enter image path">
+    
+        <label>Bedroom 3 (Optional):</label>
+        <input type="text" name="bedroom_3" placeholder="Enter image path">
+    
+        <label>Kitchen:</label>
+        <input type="text" name="kitchen" placeholder="Enter image path" required>
+    
+        <label>Bathroom:</label>
+        <input type="text" name="bathroom" placeholder="Enter image path" required>
+    
+        <button type="submit">Save Images</button>
+    </form>    
+</body>
+</html>

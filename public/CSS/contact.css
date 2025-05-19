@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    background: linear-gradient(to right, #7f3f00, #c06014);
+    color: black;
+    overflow:hidden;
+}
+
+.main-part{
+    display:flex;
+    height:100vh;
+    flex-direction:column;
+}
+
+.content{
+    flex:1;
+    overflow:auto;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(8px);
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    color: #ffd700; 
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-info p:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.faq-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.faq-section details {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.faq-section summary {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color:blue;
+    cursor: pointer;
+}
+
+.faq-section details p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color:black;
+}
+
+.faq-section details:hover {
+    background: rgba(255, 255, 255, 0.4);
+}

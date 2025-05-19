@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/about.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <title>About Page</title>
+</head>
+<body>
+    <div class="main-part">
+        <%-include("partials/header.ejs")%>
+        <div class="content">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>Welcome to Our Real Estate Platform</h2>
+                    <p>At <strong>ApnaGhar.com</strong>, we aim to provide a seamless experience for buying and renting properties. Whether you are looking for your dream home or an investment opportunity, we are here to guide you.</p>
+                </div>
+        
+                <div class="vision-mission">
+                    <h2>Our Vision & Mission</h2>
+                    <p>🏡 <strong>Vision:</strong> To redefine the real estate experience by offering an innovative, transparent, and customer-centric platform.</p>
+                    <p>🌍 <strong>Mission:</strong> To connect buyers and renters with high-quality properties, ensuring a smooth and secure transaction process.</p>
+                </div>
+        
+                <div class="why-choose-us">
+                    <h2>Why Choose Us?</h2>
+                    <ul>
+                        <li>✔ Verified property listings for security and trust</li>
+                        <li>✔ Easy and quick appointment booking</li>
+                        <li>✔ A user-friendly and intuitive platform</li>
+                        <li>✔ Complete transparency with no hidden fees</li>
+                        <li>✔ Expert guidance and support at every step</li>
+                    </ul>
+                </div>
+        
+                <div class="testimonials">
+                    <h2>What Our Customers Say</h2>
+                    <div class="testimonial">
+                        <p>⭐⭐⭐⭐⭐ "I found my dream home within days! The process was smooth and hassle-free." - <strong>Ajay Sawant</strong></p>
+                    </div>
+                    <div class="testimonial">
+                        <p>⭐⭐⭐⭐⭐ "The customer support team was very responsive and helpful throughout my journey." - <strong>Raj Jain</strong></p>
+                    </div>
+                </div>
+            </div>
+            <%-include("partials/footer.ejs")%> 
+        </div>       
+    </div>
+</body>
+</html>

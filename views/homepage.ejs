@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/home.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <title>ApnaGhar.com</title>
+</head>
+<body>
+    <div class="main-part">
+        <div class="nav-bar">
+            <div class="logo">
+                <i class="fa-solid fa-house"></i>
+                <a href="http://localhost:8080/apnaghar/home">ApnaGhar.com</a>
+            </div>
+            <div class="options">
+                    <a href="http://localhost:8080/home/buy">Buy</a>
+                    <a href="http://localhost:8080/home/rent">Rent</a>
+                    <a href="http://localhost:8080/home/about">About</a>
+                    <a href="http://localhost:8080/home/contact">Contact</a>
+                    <a href="http://localhost:8080/home/adminlogin">Admin</a>
+                    <a href="http://localhost:8080/home/login">Log in</a>
+                    <a href="http://localhost:8080/home/signup">Sign up</a>
+            </div>   
+        </div>
+    <div class="main-section">
+        <div class="content">
+            <div class="text">
+                <h1>Buy.Rent.<br>Live Better.</h1>  
+            </div>
+            <div class="searchbar">
+                <form action="/home/search" method="get">
+                    <div class="search">
+                        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="query" class="search-input" placeholder="Search properties...">
+                        <button type="submit" class="search-btn">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="buy">
+                <img src="/images/BuyImage.png" class="card-image">
+                <h1>Buy a Home</h1>
+                <p>Turn your dream of homeownership into a reality.</p>
+                <button type="submit"><a href="http://localhost:8080/home/buy">Browse Homes</a></button>
+            </div>
+            <div class="rent buy">
+                <img src="/images/RentImage.jpeg" class="card-image">
+                <h1>Rent a Home</h1>
+                <p>Explore rental options that fit your lifestyle and budget.</p>
+                <button type="submit"><a href="http://localhost:8080/home/rent">Find Rentals</a></button>
+            </div>
+        </div>
+        <div class="space"></div>
+        <%-include("partials/footer.ejs")%>
+    </div>
+    </div>
+</body>
+</html>
